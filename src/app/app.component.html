@@ -2,8 +2,10 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-8 py-4">
-        <h4 class="text-white">About</h4>
-        <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        <h4 class="text-white">Sobre</h4>
+        <p class="text-muted">O eleja-se é um gerenciador de campanhas, que foi desenvolvido com o objetivo de criar um relacionamento do candidato
+          com eleitor. Com esta ferramenta o candidato pode se comunicar através de redes sociais e está mais próximo do
+          eleitor, fazendo propagar suas ideias, conceitos e projetos. Ao mesmo tempo em que recebe um feedback do eleitorado.</p>
       </div>
       <div class="col-sm-4 py-4">
         <h4 class="text-white">Contatos</h4>
@@ -18,12 +20,34 @@
 </div>
 <div class="navbar navbar-inverse bg-inverse">
   <div class="container d-flex justify-content-between">
-    <a href="#" class="navbar-brand">ELEJA-SE</a>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+    <a href="/" class="navbar-brand">ELEJA-SE</a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
 </div>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMovimentacoesLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Parametrizações
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="parametrizacao/candidatos">Candidatos/Politicos</a>
+          <a class="dropdown-item" href="parametrizacao/colaboradores/usuarios">Usuários/Colaboradores</a>
+          <a class="dropdown-item" href="parametrizacao/colaboradores/tipos">Tipos de Colaboradores</a>
+          <a class="dropdown-item" href="parametrizacao/hierarquia">Hierarquia</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 <div class="container">
   <router-outlet></router-outlet>
 </div>
