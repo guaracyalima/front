@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import 'gentelella/production';
 
 @Component({
   selector: 'app-root',
